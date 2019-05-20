@@ -354,7 +354,6 @@
  ];
 //console.log (nameOfWorkers);
 //console.log(typeof nameOfWorkers);
-//console.log (nameOfWorkers[40].Salary);
 //var allFirstName = nameOfWorkers.map((x)=>x.firstName );
 //var allLastName = nameOfWorkers.map((x)=>x.lastName );
 //let text = " ";
@@ -369,11 +368,12 @@ for (let i = 0; i < nameOfWorkers.length; i++) {
 
     totalSalary += worker.Salary;
     ageSum += worker.Age;
-
     console.log(`This is the first name ${worker.firstName} and  this the last name ${worker.lastName}`);
 }
 
     console.log(`This is the total salary of all workers ${totalSalary}`);
-    console.log(`First name: ${worker[33].firstName}\n
-    Last name: ${worker[33].lastName}\n
-    Gender: ${worker[33]}.Gender`);
+    console.log(`First name: ${nameOfWorkers[33].firstName}\nLast name: ${nameOfWorkers[33].lastName}\nGender: ${nameOfWorkers[33].Gender}\nAge: ${nameOfWorkers[33].Age}`);
+    console.log (`The Salary for Sofia Turner is ${nameOfWorkers[40].Salary}`);
+    console.log(ageSum/nameOfWorkers.length);
+    console.log(nameOfWorkers.length);
+    
