@@ -352,13 +352,17 @@
          Salary: 132894,
      },
  ];
-//console.log (nameOfWorkers);
-//console.log(typeof nameOfWorkers);
-//var allFirstName = nameOfWorkers.map((x)=>x.firstName );
-//var allLastName = nameOfWorkers.map((x)=>x.lastName );
-//let text = " ";
 
-//console.log(allFirstName + allLastName);
+        /*
+        THIS IS NOT PART OF THE CODE -- just trying to figure something out.
+        console.log (nameOfWorkers);
+        console.log(typeof nameOfWorkers);
+        var allFirstName = nameOfWorkers.map((x)=>x.firstName );
+        var allLastName = nameOfWorkers.map((x)=>x.lastName );
+        let text = " ";
+
+        console.log(allFirstName + allLastName);
+        */
 
 let totalSalary = 0;
 let ageSum = 0;
@@ -374,6 +378,14 @@ for (let i = 0; i < nameOfWorkers.length; i++) {
     console.log(`This is the total salary of all workers ${totalSalary}`);
     console.log(`First name: ${nameOfWorkers[33].firstName}\nLast name: ${nameOfWorkers[33].lastName}\nGender: ${nameOfWorkers[33].Gender}\nAge: ${nameOfWorkers[33].Age}`);
     console.log (`The Salary for Sofia Turner is ${nameOfWorkers[40].Salary}`);
-    console.log(ageSum/nameOfWorkers.length);
-    console.log(nameOfWorkers.length);
+    console.log(`This id the average of all workers ${ageSum/nameOfWorkers.length}`); //Average Age of all workers
+    console.log(`Length of Array is ${nameOfWorkers.length}`);  //Lenght of Array
     
+    console.log(nameOfWorkers);
+    
+    nameOfWorkers[44].firstName = 'Milner';
+    console.log(nameOfWorkers[44]);
+    nameOfWorkers[49].Gender = 'Female';
+    console.log(nameOfWorkers[49]);
+    
+    //THE END
